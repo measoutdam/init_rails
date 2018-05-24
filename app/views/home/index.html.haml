@@ -1,0 +1,5 @@
+%h1 Home#index
+%p Find me in app/views/home/index.html.haml
+%p
+- if signed_in?
+  = link_to("Sign out", destroy_user_session_path, method: :delete)
